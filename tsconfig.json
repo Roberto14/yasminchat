@@ -10,7 +10,10 @@
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": [
+      "socket.io-client"
+    ]
   },
   "exclude": [
     "node_modules"
