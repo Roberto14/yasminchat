@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import React from "react";
 
 const resources = {
     en: {
@@ -33,8 +32,6 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: "en",
-
         keySeparator: false, // we do not use keys in form messages.welcome
         fallbackLng: 'en',
         debug: process.env.NODE_ENV !== 'PRODUCTION',

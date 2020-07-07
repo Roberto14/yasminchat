@@ -1,5 +1,7 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
     mode: "development",
@@ -15,7 +17,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts(x?)$/,
-                exclude: /node_modules/,
+                exclude: [/node_modules/, /spec/],
                 use: [
                     {
                         loader: "ts-loader"
@@ -26,13 +28,21 @@ module.exports = {
                 enforce: "pre",
                 test: /\.js$/,
                 loader: "source-map-loader"
-            }
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-react-loader',
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/webapp/index.template.html",
-        })
+        }),
+        new webpack.EnvironmentPlugin({
+            OA_KEY: '8b9692ae-4a46-4637-85db-e9036f1bc37b',     // This key to be supplied by CI env
+        }),
+        new BundleAnalyzerPlugin(),
     ],
     devServer: {
         contentBase: path.join(__dirname, "dist", "webapp"),

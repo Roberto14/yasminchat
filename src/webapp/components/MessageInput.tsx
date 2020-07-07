@@ -1,6 +1,7 @@
 import React, { ChangeEvent, KeyboardEvent } from "react";
-import {SETTING_ENTER_ENABLED, ON, SETTING_USER} from "../../constants";
-import {Trans} from "react-i18next";
+import {SETTING_ENTER_ENABLED, ON} from "../constants";
+import {Button, Textarea, Flex, Box} from 'theme-ui';
+import Image from '../assets/paper-plane.svg'
 
 type MessageInputPropsType = {
     onSend: (data: string) => any,
@@ -50,10 +51,14 @@ class MessageInput extends React.Component<MessageInputPropsType, MessageInputSt
         const { onChange, onKeyDown, onClick } = this
 
         return (
-            <div>
-                <textarea name="textbox" placeholder="Write a message..." {...{ value, onChange, onKeyDown}} />
-                <button type="button" onClick={onClick}><Trans>Send</Trans></button>
-            </div>
+            <Flex>
+                <Box p={2} sx={{ flex: '1 1 auto' }}>
+                    <Textarea placeholder="Write a message..." {...{ value, onChange, onKeyDown}} />
+                </Box>
+                <Box p={2}>
+                    <Button sx={{ width: ['3.7em', '4.5em', '5.7em']}} onClick={onClick} ><Image /></Button>
+                </Box>
+            </Flex>
         )
     }
 }

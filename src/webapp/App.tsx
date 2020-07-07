@@ -1,59 +1,58 @@
 import React from "react"
-import Chat from './tabs/Chat'
-import Settings from './tabs/Settings'
-import loadJs from "./helpers/loadJs";
-import { CHAT, SETTINGS } from "../constants"
+import Chat from './pages/Chat'
+import Settings from './pages/Settings'
 import { loadSettingsOrDefaults } from './helpers/loadSettings'
-import {MessagesProvider} from "./providers/MessagesProvider"
-import Navigation from "./components/Navigation";
+import { MessagesProvider } from "./providers/MessagesProvider"
+import { HashRouter, Switch, Route } from "react-router-dom"
+import { ThemeProvider } from 'theme-ui'
+import theme from './theme'
+import io from 'socket.io-client'
 
-type TabType = typeof CHAT | typeof SETTINGS
+// App class component loads the essential dependencies we need to make the app work
+// It will load: socketio, router, theme-ui provider and MessagesProvider
 
 type AppStateType = {
-    loading: boolean,
-    tab: TabType,
+    loading: boolean,   // we could use this property to show a spinner while the app is not ready
 }
 
 class App extends React.Component<{}, AppStateType> {
     state: AppStateType = {
         loading: true,
-        tab: CHAT,
     }
 
     socket: null | SocketIOClient.Socket = null
 
     componentDidMount() {
-        loadJs('http://localhost:3000/socket.io/socket.io.js').then(() => {
-            // open connection and save socket ref
-            this.socket = io('http://localhost:3000')
-            this.setState({ loading: false})
-        })
+        // connect to socket io
+        this.socket = io('http://localhost:3000')
+
         // Load localstorage settings or set defaults on first time
         loadSettingsOrDefaults()
-    }
 
-    setTab(tab: TabType) {
-        this.setState({tab})
+        // mutate state to let the page render
+        this.setState({ loading: false})
     }
 
     render() {
-        const { loading, tab } = this.state
+        const { loading } = this.state
         const { socket } = this
         return (
-            <>
-                {loading && <span>Loading Application</span>}
-                {!loading && socket && (
-                    <MessagesProvider socket={socket}>
-                        <div>
-                            <Navigation setTab={this.setTab.bind(this)} />
-                            <div>
-                                {tab === CHAT ? <Chat /> : ''}
-                                {tab === SETTINGS ? <Settings /> : ''}
-                            </div>
-                        </div>
-                    </MessagesProvider>
-                )}
-            </>
+            <HashRouter>
+                <ThemeProvider theme={theme}>
+                    {!loading && socket && (
+                        <MessagesProvider socket={socket}>
+                            <Switch>
+                                <Route path="/settings">
+                                    <Settings />
+                                </Route>
+                                <Route path="/">
+                                    <Chat />
+                                </Route>
+                            </Switch>
+                        </MessagesProvider>
+                    )}
+                </ThemeProvider>
+            </HashRouter>
         )
     }
 }

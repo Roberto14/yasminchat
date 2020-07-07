@@ -1,5 +1,5 @@
 import express from "express"
-import http from "http"
+import * as http from "http"
 import socketio from "socket.io"
 
 const app = express()

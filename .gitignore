@@ -10,11 +10,8 @@ lib-cov
 coverage
 *.lcov
 
-# nyc test coverage
-.nyc_output
-
 # build directory
-build/
+dist/
 
 # Dependency directories
 node_modules/

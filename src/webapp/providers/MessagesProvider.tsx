@@ -1,7 +1,5 @@
 import React from "react";
-import {CHANNEL, SETTING_USER} from "../../constants";
-
-// Analogous version of this provider using Hooks, check ../hooks/useMessages
+import {CHANNEL, SETTING_USER} from "../constants";
 
 export type MessageType = {
     user: string
@@ -46,11 +44,8 @@ export class MessagesProvider extends React.PureComponent<MessagesProviderPropsT
         })
     }
 
-    setMessages(newMessages: MessageType[]) {
-
-    }
-
     onSend(data: string) {
+
         const { socket } = this.props
         const user = localStorage.getItem(SETTING_USER)
         const payload = { user, timestamp: Date.now(), data, isRead: false }

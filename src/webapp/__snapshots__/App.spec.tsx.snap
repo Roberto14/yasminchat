@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component matches the snapshot 1`] = `
+<HashRouter>
+  <ThemeProvider
+    theme={
+      Object {
+        "breakpoints": Array [
+          "768px",
+          "1024px",
+          "1200px",
+        ],
+        "buttons": Object {
+          "primary": Object {
+            "&:hover": Object {
+              "bg": Array [
+                "none",
+                "none",
+                "text",
+              ],
+            },
+            "bg": "primary",
+            "color": "background",
+            "cursor": "pointer",
+            "outline": 0,
+          },
+        },
+        "colors": Object {
+          "background": "#fff",
+          "messages": "#1a202c",
+          "modes": Object {
+            "dark": Object {
+              "background": "#1a202c",
+              "messages": "#1a202c",
+              "notifications": "#2a94e0",
+              "primary": "#ccc",
+              "text": "#fff",
+            },
+          },
+          "notifications": "#cc0000",
+          "primary": "#07c",
+          "text": "#1a202c",
+        },
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+        ],
+        "fonts": Object {
+          "body": "system-ui, sans-serif",
+        },
+        "forms": Object {
+          "input": Object {
+            "&:focus": Object {
+              "borderColor": "primary",
+            },
+            "borderColor": "gray",
+            "maxWidth": Array [
+              "100%",
+              "30em",
+            ],
+            "outline": 0,
+          },
+          "label": Object {
+            "fontSize": Array [
+              1,
+              2,
+              2,
+            ],
+            "fontWeight": "bold",
+          },
+          "select": Object {
+            "&:focus": Object {
+              "borderColor": "primary",
+            },
+            "borderColor": "gray",
+            "maxWidth": Array [
+              "100%",
+              "30em",
+            ],
+            "outline": 0,
+          },
+          "textarea": Object {
+            "&:focus": Object {
+              "borderColor": "primary",
+            },
+            "borderColor": "gray",
+            "fontSize": Array [
+              0,
+              0,
+              2,
+            ],
+            "height": Array [
+              "4em",
+              "5em",
+            ],
+            "outline": 0,
+            "resize": "none",
+          },
+        },
+        "layout": Object {
+          "body": Object {
+            "display": "grid",
+            "height": "100vh",
+            "padding": "0 1em",
+          },
+          "content": Object {
+            "mt": 2,
+            "p": Array [
+              0,
+              0,
+              "0 20%",
+            ],
+          },
+        },
+        "messages": Object {
+          "received": Object {
+            "background": "#efeffe",
+            "color": "messages",
+            "float": "left",
+          },
+          "sent": Object {
+            "background": "#e4f6e2",
+            "borderLeft": "none",
+            "borderRight": "solid 4px",
+            "borderRightColor": "green",
+            "color": "messages",
+            "float": "right",
+          },
+        },
+        "styles": Object {
+          "root": Object {
+            "fontFamily": "body",
+            "height": "100%",
+            "m": 0,
+          },
+        },
+      }
+    }
+  >
+    <MessagesProvider
+      socket={
+        Object {
+          "_emitFn": [Function],
+          "broadcast": Object {
+            "to": [Function],
+          },
+          "generalCallbacks": Object {},
+          "joinedRooms": Array [],
+          "rooms": Array [],
+          "socketClient": e {
+            "_emitFn": [Function],
+            "_socketMock": [Circular],
+          },
+        }
+      }
+    >
+      <Switch>
+        <Route
+          path="/settings"
+        >
+          <Settings />
+        </Route>
+        <Route
+          path="/"
+        >
+          <Chat />
+        </Route>
+      </Switch>
+    </MessagesProvider>
+  </ThemeProvider>
+</HashRouter>
+`;
