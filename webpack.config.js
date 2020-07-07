@@ -42,6 +42,8 @@ module.exports = {
         }),
         new webpack.EnvironmentPlugin({
             OA_KEY: '8b9692ae-4a46-4637-85db-e9036f1bc37b',     // This key to be supplied by CI env
+            HOST: process.env.HOST || 'localhost',
+            PORT: process.env.PORT || '3000',
         }),
         new BundleAnalyzerPlugin(),
     ],

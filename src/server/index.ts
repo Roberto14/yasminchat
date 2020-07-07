@@ -6,6 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 const port = process.env.PORT || 3000;
+const host = process.env.HOST || 'localhost';
 
 io.on('connection', (socket: any) => {
   socket.on('message', (data: string) => {
@@ -15,6 +16,6 @@ io.on('connection', (socket: any) => {
   console.log('user connected');
 });
 
-server.listen(port, () => {
-  console.log(`listening on *:${port}`);
+server.listen({ host, port, exclusive: true }, () => {
+  console.log(`listening on ${host}:${port}`);
 });

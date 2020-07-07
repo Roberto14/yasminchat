@@ -11,6 +11,8 @@ jest.mock('socket.io-client');
 
 describe('App Component', () => {
   beforeEach(() => {
+    process.env.HOST = 'localhost'
+    process.env.PORT = '3000'
     // @ts-ignore
     socketIOClient.mockReturnValue(new MockedSocket());
   });
@@ -26,7 +28,7 @@ describe('App Component', () => {
 
   it('checks socket.io has been loaded and called with correct url', () => {
     shallow(<App />); // only needs to run the wrapper
-    const url = 'http://localhost:3000';
+    const url = `http://${process.env.HOST}:${process.env.PORT}`;
 
     expect(socketIOClient.connect).toHaveBeenCalledWith(url);
   });

@@ -29,7 +29,8 @@ class App extends React.Component<AppPropsType, AppStateType> {
 
   componentDidMount() {
     // connect to socket io
-    this.socket = io('http://localhost:3000');
+    // Note: This would have to be supplied by Env variable
+    this.socket = io(`http://${process.env.HOST}:${process.env.PORT}`);
 
     // Load localstorage settings or set defaults on first time
     loadSettingsOrDefaults();

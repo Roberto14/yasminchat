@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CHANNEL, SETTING_USER } from '../constants';
+import { on, off } from '../helpers/titleNotification'
 
 export type MessageType = {
   user: string
@@ -45,6 +46,9 @@ export class MessagesProvider extends Component<MsgProviderPropsType, MsgProvide
     const { socket } = this.props;
 
     socket.on(CHANNEL, (newMessage: MessageType) => {
+      if(global.document.hidden) {
+        on("New Message!");
+      }
       this.setState((state) => ({ messages: [...state.messages, newMessage] }));
     });
   }
@@ -66,6 +70,7 @@ export class MessagesProvider extends Component<MsgProviderPropsType, MsgProvide
       const readMsgs : MessageType[] = messages.map((m: MessageType) => ({ ...m, isRead: true }));
       this.setState(() => ({ messages: readMsgs }));
     }
+    off()
   }
 
   render() {

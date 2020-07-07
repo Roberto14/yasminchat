@@ -90,5 +90,4 @@
       "pre-commit": "npm run precommit"
     }
   }
-
 }
