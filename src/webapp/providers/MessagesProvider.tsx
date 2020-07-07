@@ -1,76 +1,84 @@
-import React from "react";
-import {CHANNEL, SETTING_USER} from "../constants";
+import React, { Component } from 'react';
+import { CHANNEL, SETTING_USER } from '../constants';
 
 export type MessageType = {
-    user: string
-    timestamp: number,
-    data: string,
-    isRead: boolean,
-}
+  user: string
+  timestamp: number,
+  data: string,
+  isRead: boolean,
+};
 
-type MessagesProviderPropsType = {
-    socket: SocketIOClient.Socket,
-    children: React.ReactNode,
-}
+export type ContextType = {
+  messages: MessageType[],
+  onSend: (data: string) => void,
+  read: () => void,
+};
 
-type MessagesProviderStateType = {
-    messages: MessageType[],
-}
+type MsgProviderPropsType = {
+  socket: SocketIOClient.Socket,
+  children: React.ReactNode,
+};
 
-type ContextType = {
-    messages: MessageType[],
-    onSend: (data: string) => void,
-    read: () => void,
-}
+type MsgProviderStateType = {
+  messages: MessageType[],
+};
+
 const defaultValue = {
-    messages: [],
-    onSend: () => {},
-    read: () => {},
-}
-const MessagesContext = React.createContext<ContextType>(defaultValue)
+  messages: [],
+  onSend: () => {},
+  read: () => {},
+};
+const MessagesContext = React.createContext<ContextType>(defaultValue);
+export const MessagesConsumer = MessagesContext.Consumer;
 
-export const MessagesConsumer = MessagesContext.Consumer
+export class MessagesProvider extends Component<MsgProviderPropsType, MsgProviderStateType> {
+  constructor(props: MsgProviderPropsType) {
+    super(props);
+    this.state = {
+      messages: defaultValue.messages,
+    };
+    this.onSend = this.onSend.bind(this);
+    this.read = this.read.bind(this);
+  }
 
-export class MessagesProvider extends React.PureComponent<MessagesProviderPropsType, MessagesProviderStateType>{
-    state = {
-        messages: defaultValue.messages
+  componentDidMount() {
+    const { socket } = this.props;
+
+    socket.on(CHANNEL, (newMessage: MessageType) => {
+      this.setState((state) => ({ messages: [...state.messages, newMessage] }));
+    });
+  }
+
+  onSend(data: string) {
+    const { socket } = this.props;
+    const user = localStorage.getItem(SETTING_USER);
+    const payload = {
+      user, timestamp: Date.now(), data, isRead: false,
+    };
+
+    socket.emit(CHANNEL, payload);
+  }
+
+  read() {
+    const { messages } = this.state;
+    const unreads = messages.some((m: MessageType) => !m.isRead);
+    if (unreads) {
+      const readMsgs : MessageType[] = messages.map((m: MessageType) => ({ ...m, isRead: true }));
+      this.setState(() => ({ messages: readMsgs }));
     }
+  }
 
-    componentDidMount() {
-        const { socket } = this.props
+  render() {
+    const { children } = this.props;
+    const { messages } = this.state;
+    const { onSend, read } = this;
 
-        socket.on(CHANNEL, (newMessage: MessageType) => {
-            this.setState((state) => ({ messages: [ ...state.messages, newMessage]}))
-        })
-    }
+    const value = { messages, onSend, read };
 
-    onSend(data: string) {
-
-        const { socket } = this.props
-        const user = localStorage.getItem(SETTING_USER)
-        const payload = { user, timestamp: Date.now(), data, isRead: false }
-
-        socket.emit(CHANNEL, payload)
-    }
-    read() {
-        const { messages } = this.state
-        const unreads = messages.some((m: MessageType) => !m.isRead)
-        if(unreads) {
-            const readMessages: MessageType[] = messages.map((m: MessageType) => ({...m, isRead: true }))
-            this.setState((state) => ({ messages: readMessages }))
-        }
-    }
-
-    render(){
-        const { children } = this.props
-        const { messages } = this.state
-
-        const value = { messages, onSend: this.onSend.bind(this), read: this.read.bind(this) }
-
-        return (
-            <MessagesContext.Provider value={value}>
-                {children}
-            </MessagesContext.Provider>
-        )
-    }
+    return (
+      <MessagesContext.Provider value={value}>
+        {children}
+      </MessagesContext.Provider>
+    );
+  }
 }

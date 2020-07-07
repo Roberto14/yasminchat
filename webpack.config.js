@@ -20,7 +20,8 @@ module.exports = {
                 exclude: [/node_modules/, /spec/],
                 use: [
                     {
-                        loader: "ts-loader"
+                        loader: "ts-loader",
+                        options: { onlyCompileBundledFiles: true }
                     }
                 ]
             },

@@ -1,0 +1,1893 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings Page Component matches the snapshot 1`] = `
+<Settings>
+  <ForwardRef
+    sx={
+      Object {
+        "gridTemplateRows": "3em 1fr 3em",
+      }
+    }
+    variant="body"
+  >
+    <Styled(div)
+      __css={
+        Object {
+          "maxWidth": "container",
+          "mx": "auto",
+          "width": "100%",
+        }
+      }
+      __themeKey="layout"
+      sx={
+        Object {
+          "gridTemplateRows": "3em 1fr 3em",
+        }
+      }
+      variant="body"
+    >
+      <div
+        className="css-1ig0zza"
+      >
+        <Navigation>
+          <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Navigation"
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="ul"
+            css={[Function]}
+          >
+            <ul
+              className="css-v4nz2a-Navigation"
+            >
+              <li>
+                <Link
+                  to="/"
+                >
+                  <LinkAnchor
+                    href="/"
+                    navigate={[Function]}
+                  >
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <EmotionCssPropInternal
+                        __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          }
+                        }
+                        css={[Function]}
+                      >
+                        <ForwardRef
+                          className="css-79elbk"
+                        >
+                          <Styled(div)
+                            __css={
+                              Object {
+                                "appearance": "none",
+                                "bg": "primary",
+                                "border": 0,
+                                "borderRadius": 4,
+                                "color": "white",
+                                "display": "inline-block",
+                                "fontSize": "inherit",
+                                "lineHeight": "inherit",
+                                "px": 3,
+                                "py": 2,
+                                "textAlign": "center",
+                                "textDecoration": "none",
+                              }
+                            }
+                            __themeKey="buttons"
+                            as="button"
+                            className="css-79elbk"
+                            variant="primary"
+                          >
+                            <button
+                              className="css-svk3ra"
+                            />
+                          </Styled(div)>
+                        </ForwardRef>
+                      </EmotionCssPropInternal>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </li>
+              <EmotionCssPropInternal
+                __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Navigation"
+                __EMOTION_TYPE_PLEASE_DO_NOT_USE__="li"
+                css={[Function]}
+              >
+                <li
+                  className="css-1mai129-Navigation"
+                >
+                  <Link
+                    to="/settings"
+                  >
+                    <LinkAnchor
+                      href="/settings"
+                      navigate={[Function]}
+                    >
+                      <a
+                        href="/settings"
+                        onClick={[Function]}
+                      >
+                        <ForwardRef>
+                          <Styled(div)
+                            __css={
+                              Object {
+                                "appearance": "none",
+                                "bg": "primary",
+                                "border": 0,
+                                "borderRadius": 4,
+                                "color": "white",
+                                "display": "inline-block",
+                                "fontSize": "inherit",
+                                "lineHeight": "inherit",
+                                "px": 3,
+                                "py": 2,
+                                "textAlign": "center",
+                                "textDecoration": "none",
+                              }
+                            }
+                            __themeKey="buttons"
+                            as="button"
+                            variant="primary"
+                          >
+                            <button
+                              className="css-1159b5l"
+                            />
+                          </Styled(div)>
+                        </ForwardRef>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </li>
+              </EmotionCssPropInternal>
+            </ul>
+          </EmotionCssPropInternal>
+        </Navigation>
+        <ForwardRef
+          sx={
+            Object {
+              "overflowY": "scroll",
+            }
+          }
+          variant="content"
+        >
+          <Styled(div)
+            __css={
+              Object {
+                "maxWidth": "container",
+                "mx": "auto",
+                "width": "100%",
+              }
+            }
+            __themeKey="layout"
+            sx={
+              Object {
+                "overflowY": "scroll",
+              }
+            }
+            variant="content"
+          >
+            <div
+              className="css-1guiooz"
+            >
+              <Styled(div)>
+                <div
+                  className="css-vurnku"
+                >
+                  <ForwardRef>
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "display": "flex",
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="label"
+                      variant="label"
+                    >
+                      <label
+                        className="css-10c2sro"
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                  <ForwardRef
+                    mb={4}
+                    onChange={[Function]}
+                    value=""
+                  >
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "appearance": "none",
+                          "bg": "transparent",
+                          "border": "1px solid",
+                          "borderRadius": 4,
+                          "color": "inherit",
+                          "display": "block",
+                          "fontSize": "inherit",
+                          "lineHeight": "inherit",
+                          "p": 2,
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="input"
+                      mb={4}
+                      onChange={[Function]}
+                      value=""
+                      variant="input"
+                    >
+                      <input
+                        className="css-1u3b3b0"
+                        onChange={[Function]}
+                        value=""
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                mt={4}
+              >
+                <div
+                  className="css-i0y2du"
+                >
+                  <ForwardRef
+                    mb={2}
+                  >
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "display": "flex",
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="label"
+                      mb={2}
+                      variant="label"
+                    >
+                      <label
+                        className="css-b6eojv"
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                  <Memo(BinaryRadioInput)
+                    name="interfaceMode"
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "selected": true,
+                          "text": "Light",
+                          "value": "default",
+                        },
+                        Object {
+                          "selected": false,
+                          "text": "Dark",
+                          "value": "dark",
+                        },
+                      ]
+                    }
+                  >
+                    <EmotionCssPropInternal
+                      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BinaryRadioInput"
+                      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "div",
+                          "__emotion_forwardProp": [Function],
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            Object {
+                              "boxSizing": "border-box",
+                              "margin": 0,
+                              "minWidth": 0,
+                            },
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            Object {
+                              "display": "flex",
+                            },
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(div)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      css={[Function]}
+                    >
+                      <Styled(div)
+                        className="css-f87m76-BinaryRadioInput"
+                      >
+                        <div
+                          className="css-gr1lh8-BinaryRadioInput"
+                        >
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={true}
+                                  name="interfaceMode"
+                                  onChange={[Function]}
+                                  value="default"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={true}
+                                        name="interfaceMode"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="default"
+                                      >
+                                        <input
+                                          checked={true}
+                                          className="css-p19g2b"
+                                          name="interfaceMode"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="default"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                Light
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={false}
+                                  name="interfaceMode"
+                                  onChange={[Function]}
+                                  value="dark"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={false}
+                                        name="interfaceMode"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="dark"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="css-p19g2b"
+                                          name="interfaceMode"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="dark"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                Dark
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                        </div>
+                      </Styled(div)>
+                    </EmotionCssPropInternal>
+                  </Memo(BinaryRadioInput)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                mt={4}
+              >
+                <div
+                  className="css-i0y2du"
+                >
+                  <ForwardRef
+                    mb={2}
+                  >
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "display": "flex",
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="label"
+                      mb={2}
+                      variant="label"
+                    >
+                      <label
+                        className="css-b6eojv"
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                  <Memo(BinaryRadioInput)
+                    name="clockDisplay"
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "selected": false,
+                          "text": "12 Hours",
+                          "value": "OFF",
+                        },
+                        Object {
+                          "selected": false,
+                          "text": "24 Hours",
+                          "value": "ON",
+                        },
+                      ]
+                    }
+                  >
+                    <EmotionCssPropInternal
+                      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BinaryRadioInput"
+                      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "div",
+                          "__emotion_forwardProp": [Function],
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            Object {
+                              "boxSizing": "border-box",
+                              "margin": 0,
+                              "minWidth": 0,
+                            },
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            Object {
+                              "display": "flex",
+                            },
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(div)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      css={[Function]}
+                    >
+                      <Styled(div)
+                        className="css-f87m76-BinaryRadioInput"
+                      >
+                        <div
+                          className="css-gr1lh8-BinaryRadioInput"
+                        >
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={false}
+                                  name="clockDisplay"
+                                  onChange={[Function]}
+                                  value="OFF"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={false}
+                                        name="clockDisplay"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="OFF"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="css-p19g2b"
+                                          name="clockDisplay"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="OFF"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                12 Hours
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={false}
+                                  name="clockDisplay"
+                                  onChange={[Function]}
+                                  value="ON"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={false}
+                                        name="clockDisplay"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="ON"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="css-p19g2b"
+                                          name="clockDisplay"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="ON"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                24 Hours
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                        </div>
+                      </Styled(div)>
+                    </EmotionCssPropInternal>
+                  </Memo(BinaryRadioInput)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                mt={4}
+              >
+                <div
+                  className="css-i0y2du"
+                >
+                  <ForwardRef
+                    mb={1}
+                  >
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "display": "flex",
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="label"
+                      mb={1}
+                      variant="label"
+                    >
+                      <label
+                        className="css-14xobpp"
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                  <Memo(BinaryRadioInput)
+                    name="ctrlEnter"
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "selected": false,
+                          "text": "On",
+                          "value": "ON",
+                        },
+                        Object {
+                          "selected": false,
+                          "text": "Off",
+                          "value": "OFF",
+                        },
+                      ]
+                    }
+                  >
+                    <EmotionCssPropInternal
+                      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BinaryRadioInput"
+                      __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "__emotion_base": "div",
+                          "__emotion_forwardProp": [Function],
+                          "__emotion_real": [Circular],
+                          "__emotion_styles": Array [
+                            Object {
+                              "boxSizing": "border-box",
+                              "margin": 0,
+                              "minWidth": 0,
+                            },
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            Object {
+                              "display": "flex",
+                            },
+                          ],
+                          "defaultProps": undefined,
+                          "displayName": "Styled(div)",
+                          "render": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      css={[Function]}
+                    >
+                      <Styled(div)
+                        className="css-f87m76-BinaryRadioInput"
+                      >
+                        <div
+                          className="css-gr1lh8-BinaryRadioInput"
+                        >
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={false}
+                                  name="ctrlEnter"
+                                  onChange={[Function]}
+                                  value="ON"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={false}
+                                        name="ctrlEnter"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="ON"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="css-p19g2b"
+                                          name="ctrlEnter"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="ON"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                On
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                          <ForwardRef>
+                            <Styled(div)
+                              __css={
+                                Object {
+                                  "display": "flex",
+                                  "width": "100%",
+                                }
+                              }
+                              __themeKey="forms"
+                              as="label"
+                              variant="label"
+                            >
+                              <label
+                                className="css-10c2sro"
+                              >
+                                <ForwardRef
+                                  checked={false}
+                                  name="ctrlEnter"
+                                  onChange={[Function]}
+                                  value="OFF"
+                                >
+                                  <Styled(div)>
+                                    <div
+                                      className="css-vurnku"
+                                    >
+                                      <Styled(div)
+                                        as="input"
+                                        checked={false}
+                                        name="ctrlEnter"
+                                        onChange={[Function]}
+                                        sx={
+                                          Object {
+                                            "height": 1,
+                                            "opacity": 0,
+                                            "overflow": "hidden",
+                                            "position": "absolute",
+                                            "width": 1,
+                                            "zIndex": -1,
+                                          }
+                                        }
+                                        type="radio"
+                                        value="OFF"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="css-p19g2b"
+                                          name="ctrlEnter"
+                                          onChange={[Function]}
+                                          type="radio"
+                                          value="OFF"
+                                        />
+                                      </Styled(div)>
+                                      <Styled(div)
+                                        __css={
+                                          Object {
+                                            "borderRadius": 9999,
+                                            "color": "gray",
+                                            "input:checked ~ &": Object {
+                                              "color": "primary",
+                                            },
+                                            "input:focus ~ &": Object {
+                                              "bg": "highlight",
+                                            },
+                                            "mr": 2,
+                                          }
+                                        }
+                                        __themeKey="forms"
+                                        aria-hidden="true"
+                                        as={[Function]}
+                                        variant="radio"
+                                      >
+                                        <RadioIcon
+                                          aria-hidden="true"
+                                          className="css-1flg53v"
+                                        >
+                                          <RadioChecked
+                                            __css={
+                                              Object {
+                                                "display": "none",
+                                                "input:checked ~ &": Object {
+                                                  "display": "block",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "none",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "block",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "none",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "block",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1tangaw"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioChecked>
+                                          <RadioUnchecked
+                                            __css={
+                                              Object {
+                                                "display": "block",
+                                                "input:checked ~ &": Object {
+                                                  "display": "none",
+                                                },
+                                              }
+                                            }
+                                            aria-hidden="true"
+                                            className="css-1flg53v"
+                                          >
+                                            <SVG
+                                              __css={
+                                                Object {
+                                                  "display": "block",
+                                                  "input:checked ~ &": Object {
+                                                    "display": "none",
+                                                  },
+                                                }
+                                              }
+                                              aria-hidden="true"
+                                              className="css-1flg53v"
+                                            >
+                                              <Styled(div)
+                                                __css={
+                                                  Object {
+                                                    "display": "block",
+                                                    "input:checked ~ &": Object {
+                                                      "display": "none",
+                                                    },
+                                                  }
+                                                }
+                                                aria-hidden="true"
+                                                as="svg"
+                                                className="css-1flg53v"
+                                                fill="currentcolor"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="css-1nyhzak"
+                                                  fill="currentcolor"
+                                                  height="24"
+                                                  viewBox="0 0 24 24"
+                                                  width="24"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                                                  />
+                                                </svg>
+                                              </Styled(div)>
+                                            </SVG>
+                                          </RadioUnchecked>
+                                        </RadioIcon>
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </ForwardRef>
+                                Off
+                              </label>
+                            </Styled(div)>
+                          </ForwardRef>
+                        </div>
+                      </Styled(div)>
+                    </EmotionCssPropInternal>
+                  </Memo(BinaryRadioInput)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                mt={4}
+              >
+                <div
+                  className="css-i0y2du"
+                >
+                  <ForwardRef>
+                    <Styled(div)
+                      __css={
+                        Object {
+                          "display": "flex",
+                          "width": "100%",
+                        }
+                      }
+                      __themeKey="forms"
+                      as="label"
+                      variant="label"
+                    >
+                      <label
+                        className="css-10c2sro"
+                      />
+                    </Styled(div)>
+                  </ForwardRef>
+                  <LocaleSwitcher>
+                    <ForwardRef
+                      onChange={[Function]}
+                    >
+                      <Styled(div)
+                        sx={
+                          Object {
+                            "display": "flex",
+                          }
+                        }
+                      >
+                        <div
+                          className="css-4cffwv"
+                        >
+                          <Styled(div)
+                            __css={
+                              Object {
+                                "appearance": "none",
+                                "bg": "transparent",
+                                "border": "1px solid",
+                                "borderRadius": 4,
+                                "color": "inherit",
+                                "display": "block",
+                                "fontSize": "inherit",
+                                "lineHeight": "inherit",
+                                "p": 2,
+                                "width": "100%",
+                              }
+                            }
+                            __themeKey="forms"
+                            as="select"
+                            onChange={[Function]}
+                            variant="select"
+                          >
+                            <select
+                              className="css-2mp0gb"
+                              onChange={[Function]}
+                            >
+                              <option
+                                value="en"
+                              />
+                              <option
+                                value="pt"
+                              />
+                            </select>
+                          </Styled(div)>
+                          <DownArrow
+                            sx={
+                              Object {
+                                "alignSelf": "center",
+                                "ml": -28,
+                                "pointerEvents": "none",
+                              }
+                            }
+                          >
+                            <SVG
+                              sx={
+                                Object {
+                                  "alignSelf": "center",
+                                  "ml": -28,
+                                  "pointerEvents": "none",
+                                }
+                              }
+                            >
+                              <Styled(div)
+                                as="svg"
+                                fill="currentcolor"
+                                height="24"
+                                sx={
+                                  Object {
+                                    "alignSelf": "center",
+                                    "ml": -28,
+                                    "pointerEvents": "none",
+                                  }
+                                }
+                                viewBox="0 0 24 24"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  className="css-1swud1q"
+                                  fill="currentcolor"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7 10l5 5 5-5z"
+                                  />
+                                </svg>
+                              </Styled(div)>
+                            </SVG>
+                          </DownArrow>
+                        </div>
+                      </Styled(div)>
+                    </ForwardRef>
+                  </LocaleSwitcher>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </ForwardRef>
+        <ForwardRef
+          variant="content"
+        >
+          <Styled(div)
+            __css={
+              Object {
+                "maxWidth": "container",
+                "mx": "auto",
+                "width": "100%",
+              }
+            }
+            __themeKey="layout"
+            variant="content"
+          >
+            <div
+              className="css-xyf3cr"
+            >
+              <ForwardRef
+                id="reset"
+                onClick={[Function]}
+                sx={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              >
+                <Styled(div)
+                  __css={
+                    Object {
+                      "appearance": "none",
+                      "bg": "primary",
+                      "border": 0,
+                      "borderRadius": 4,
+                      "color": "white",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "lineHeight": "inherit",
+                      "px": 3,
+                      "py": 2,
+                      "textAlign": "center",
+                      "textDecoration": "none",
+                    }
+                  }
+                  __themeKey="buttons"
+                  as="button"
+                  id="reset"
+                  onClick={[Function]}
+                  sx={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                  variant="primary"
+                >
+                  <button
+                    className="css-18nmc2k"
+                    id="reset"
+                    onClick={[Function]}
+                  />
+                </Styled(div)>
+              </ForwardRef>
+            </div>
+          </Styled(div)>
+        </ForwardRef>
+      </div>
+    </Styled(div)>
+  </ForwardRef>
+</Settings>
+`;
