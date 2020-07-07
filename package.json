@@ -72,7 +72,7 @@
     "develop:server": "nodemon",
     "develop:webapp": "webpack-dev-server",
     "lint": "eslint src/**/*.{ts,tsx}",
-    "precommit": "npm run lint && npm run test",
+    "precommit": "npm run lint -- --fix && npm run test",
     "test": "jest --coverage"
   },
   "repository": {
