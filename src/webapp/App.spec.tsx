@@ -11,8 +11,8 @@ jest.mock('socket.io-client');
 
 describe('App Component', () => {
   beforeEach(() => {
-    process.env.HOST = 'localhost'
-    process.env.PORT = '3000'
+    process.env.HOST = 'localhost';
+    process.env.PORT = '3000';
     // @ts-ignore
     socketIOClient.mockReturnValue(new MockedSocket());
   });
